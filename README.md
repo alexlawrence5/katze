@@ -46,7 +46,7 @@ https://www.nasm.us/pub/nasm/releasebuilds/ :: Visit this URL to download NASM o
 Let's clone this project:
 
 ```bash
-git clone https://github.com/alexlawrence/katze.git
+git clone https://github.com/alexlawrence5/katze.git
 cd katze
 ```
 
