@@ -39,3 +39,22 @@ initm: db "OK: Init operation started successfully.",0
 
 times 510 - ($-$$) db 0
 dw 0xAA55
+
+; ----------------------------
+; an simple shell runner
+; ----------------------------
+
+    mov bx, 0x8000
+    mov ah, 0x02
+    mov al, 1
+    mov ch, 0
+    mov cl, 2
+    mov dh, 0
+    mov dl, 0
+    int 0x13
+
+    jmp 0x8000
+
+hang:
+    hlt
+    jmp hang
