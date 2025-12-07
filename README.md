@@ -7,6 +7,7 @@ Requirements to compile this system:
 
 ### 1. System requirements
 * **Linux**/Windows/MacOS X based OS.
+* 16-bit system (If you are going to run the binary file on a real hardware)
 
 ### 2. Assembler
 You will need NASM.
