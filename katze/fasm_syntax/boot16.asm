@@ -135,6 +135,6 @@ entry:
   mov bx, 0x1000
   int 0x13
 
-jmp 0x1000
-    times 510 - ($-$$) db 0
-    dw 0xAA55
+  jmp 0x1000
+  times 510 - ($-$$) db 0
+  dw 0xAA55
