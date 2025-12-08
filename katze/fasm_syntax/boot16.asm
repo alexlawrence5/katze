@@ -126,5 +126,15 @@ bymsg   db "BYE",0Dh,0Ah,0
 katze_msg db "KATZE",0Dh,0Ah,0
 
 entry:
+  mov ah, 0x02
+  mov al, 1
+  mov ch, 0
+  mov cl, 2
+  mov dh, 0
+  mov dl, 0
+  mov bx, 0x1000
+  int 0x13
+
+jmp 0x1000
     times 510 - ($-$$) db 0
     dw 0xAA55
